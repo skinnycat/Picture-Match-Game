@@ -1,0 +1,87 @@
+*              {position:relative; border:0px; margin: 0px; padding: 0px;}
+body           {background: url(../images/bg.png) 0px 0px repeat;}
+#bg            {width:1000px;height:600px;margin-left:auto;margin-right:auto;}
+#mainContainer {display:block; width:746px;height:498px;margin-left:auto;margin-right:auto;margin-top:50px; background-color:#80a34c;}
+#scrnContainer {position:absolute; top:0px; left:0px; width:746px;height:498px;}
+#gameContainer {border-width:1px; border-color:#000;border-style:solid;margin-left:auto;margin-right:auto;width:744px;height:496px; background-color:#fff;}
+#menuContainer {z-index:10; visibility:visible; background-color:#e18728;position:absolute; top:0px; left:0px; width:746px;height:498px;}
+#cards         {-webkit-perspective: 1000;}
+.verdanaFont12b{font-family:verdana;font-size:12px;color:#000;font-weight:bold;}
+.verdanaFont24b{font-family:verdana;font-size:24px;color:#000;font-weight:bold;}
+#clickScore    {position:absolute;top:5px;left:5px;width:100px;height:16px; color:#fff;}
+.hCenter       {margin-left:auto; margin:auto;}
+.button        {position:absolute;color:#fff;top:300px;left:200px;width:120px;height:50px; cursor:pointer;}
+.level1        {top:200px;left:200px;}
+.level2        {top:250px;left:200px;}
+.level3        {top:300px;left:200px;}
+.card          {margin:2px;
+                width:120px;
+                height:120px;  
+                float:left;
+                z-index:2;
+                -webkit-transform-style: preserve-3d;
+                -moz-transform-style: preserve-3d;
+                -o-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+                -webkit-transform-origin: center;
+                -moz-transform-origin: center;
+                -o-transform-origin: center;
+                transform-origin: center;
+                -moz-transition: all 1s;
+                -webkit-transition: all 1s;
+                -o-transition: all 1s;
+                -ms-transition: all 1s;
+                transition: all 1s;
+                cursor:pointer;}
+                
+                
+.cardFront     {position:absolute; display:block; width:120px; height:120px; z-index:7;
+                background-color:#cc0000;
+                -moz-backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		-o-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+                backface-visibility: hidden;
+                background: url(../images/chargrid.jpg) 0px -360px;}
+
+.cardBack      {background: url(../images/chargrid.jpg) 0 0px;
+                position:absolute;
+		display:block;
+		width:120px;
+		height:120px;
+		z-index:6;
+		background-color:#0000cc;
+		-moz-backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		-o-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+                backface-visibility: hidden;
+                
+		-moz-transform: rotate3d(0,1,0,-180deg);
+		-webkit-transform: rotate3d(0,1,0,-180deg);
+		-o-transform: rotate3d(0,1,0,-180deg);
+		-ms-transform: rotate3d(0,1,0,-180deg);
+                transform: rotate3d(0,1,0,-180deg);}
+
+.flip          {-moz-transform: rotate3d(0,1,0,180deg);
+                -webkit-transform: rotate3d(0,1,0,180deg);
+                -o-transform: rotate3d(0,1,0,180deg);
+                -ms-transform: rotate3d(0,1,0,180deg);
+                transform: rotate3d(0,1,0,180deg);}
+             
+
+
+.hide          {visibility:hidden;}
+
+.card1         {background-position:   0px    0px;}
+.card2         {background-position:-120px    0px;}
+.card3         {background-position:-240px    0px;}
+.card4         {background-position:-120px -240px;}
+.card5         {background-position:-240px -240px;}
+.card6         {background-position:-360px -240px;}
+.card7         {background-position:-240px -120px;}
+.card8         {background-position:-360px -120px;}
+.card9         {background-position:   0px -240px;}
+.card10        {background-position:-360px    0px;}
+.card11        {background-position:   0px -120px;}
+.card12        {background-position:-120px -120px;}
